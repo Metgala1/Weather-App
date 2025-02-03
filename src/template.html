@@ -6,28 +6,25 @@
     <title>Weather App</title>
   </head>
   <body>
-    <h1>Weather <span>Now</span></h1>
+    <nav>
+      <h1>Weather <span class="now">Now</span></h1>
+      <form>
+        <input type="text" name="city" id="city" placeholder="Enter City" />
+        <button type="submit">Check Weather</button>
+      </form>
+    </nav>
     <div id="board">
-      <div id="location">Location
+      <div id="location">
         <span class="location"></span>
-      </div>
-      <div id="condition">Condition
         <span class="condition"></span>
-      </div>
-      <div id="humidity">
-        Humindity
         <span class="humidity"></span>
-      </div>
-      <div id="temperature">
-        Temperature
-        <span class="temperature">
+        <span class="temperature"> </span>
 
-        </span>
       </div>
     </div>
-    <form>
-    <input type="text" name="city" id="city" placeholder="Enter City">
-     <button type="button">Check Weather</button>
-    </form>
+    <div id="ring">
+      <div id="loading" style="display: none">Loading...</div>
+      <div class="lds-dual-ring"></div>
+    </div>
   </body>
 </html>
